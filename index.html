@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranshu Chourasia - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        #about {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50vh;
+            /* Adjust as needed */
+            object-fit: cover;
+            z-index: 0;
+            opacity: 0.4;
+            /* Set opacity to 50% */
+        }
+        
+        .content {
+            z-index: 1;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+
+    <body class="bg-gray-100">
+        <!-- Navbar -->
+        <!-- Navbar -->
+        <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Pranshu Chourasia</span>
+                </a>
+                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    <a href="downlode.html" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Download Photo</a>
+                    <button id="menu-toggle" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                    <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="#about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#gallery" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#skills" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- About Me Section -->
+        <section id="about" class="pt-2 pb-16 bg-gray-100 dark:bg-gray-900 relative">
+            <!-- Replace 'video/video.mp4' with your video file path -->
+            <video autoplay muted loop class="w-full h-full object-cover absolute inset-0">
+            <source src="00008.mp4" type="video/mp4">
+        </video>
+            <div class="content max-w-4xl mx-auto px-4">
+                <h2 class="flex flex-row flex-nowrap items-center mt-24">
+                    <span class="flex-grow block border-t border-black"></span>
+                    <span class="flex-none block mx-1 px-9 py-2.5 text-x2 rounded leading-none font-medium bg-black text-white">
+                    About me
+                </span>
+                    <span class="flex-grow block border-t border-black"></span>
+                </h2>
+                <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8 relative z-10">
+                    <!-- Update image source and add alt text -->
+                    <img class="w-full rounded-lg" src="image/Screenshot_2023-02-08_172706-removebg-preview.png" alt="Pranshu Chourasia">
+                    <div class="p-2">
+                        <h3 class="text-center text-xl text-black font-medium leading-8">Pranshu Chourasia</h3>
+                        <div class="text-center text-black-400 text-xs font-semibold">
+                            <p>Web Developer</p>
+                        </div>
+                        <div class="max-w-md">
+                            <div class="max-w-md">
+                                <p class="text-lg text-black-700 dark:text-gray-300">
+                                    Hey, I'm Pranshu Chourasia, a web developer and founder of <a href="https://www.grafikgalore.live" target="_blank" class="text-blue-500 dark:text-blue-400 underline">GrafikGalore.live</a>. Passionate about tech and
+                                    creativity, I love crafting websites and curating unique posters. Let's push boundaries and create something amazing together!
+                                </p>
+
+                            </div>
+
+
+                            <div class="flex justify-center my-3 space-x-4">
+                                <!-- Adjusted space between icons -->
+                                <!-- Corrected LinkedIn profile URL -->
+                                <a class="text-gray-400 hover:text-orange-600" aria-label="Visit Pranshu Chourasia's LinkedIn" href="https://www.linkedin.com/in/pranshu-chourasia" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-8">
+                                <path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+                            </svg>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-gray-900">
+                                    <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                            </svg>
+                                </a>
+                                <a class="text-gray-400 inline-flex items-center rounded-lg p-2.5 text-sm hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200" aria-label="Instagram" href="https://www.instagram.com/your-profile" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5">
+                                <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8
+                            a4 0 0 1 -4 -4v-8a4 4 0 0 1 4 -4z"></path>
+                                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                <path d="M16.5 7.5l0 .01"></path>
+                            </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-16 bg-white dark:bg-gray-800">
+            <div class="max-w-4xl mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-semibold text-center text-gray-900 dark:text-white mb-8">My Gallery</h2>
+
+
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="grid gap-4">
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg" src="image/DSC06529.JPG" alt="">
+                        </div>
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg" src="image/DSC06565.JPG" alt="">
+                        </div>
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg" src="image/DSC06627.JPG" alt="">
+                        </div>
+                    </div>
+                    <div class="grid gap-4">
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg" src="image/DSC06632.JPG" alt="">
+                        </div>
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg" src="image/DSC06637.JPG" alt="">
+                        </div>
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg" src="image/DSC06655.JPG" alt="">
+                        </div>
+                    </div>
+                    <div class="grid gap-4">
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg" src="image/DSC06669.JPG" alt="">
+                        </div>
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg" src="image/1636178969149 (1).jpg" alt="">
+                        </div>
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg" src="image/1636560928399 (1).jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="grid gap-4">
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg" src="image/1636699759938 (1).jpg" alt="">
+                        </div>
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg" src="image/DSC06319-01 (2).jpg" alt="">
+                        </div>
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg" src="image/DSC07992-01.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+
+
+        <!-- Contact Me Section -->
+        <section id="contact" class="py-16 bg-white dark:bg-gray-800">
+            <div class="max-w-4xl mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-semibold text-center text-gray-900 dark:text-white mb-8">Contact Me</h2>
+                <div class="max-w-md mx-auto">
+                    <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">Feel free to reach out to me through any of the following channels:</p>
+                    <!-- Contact Information -->
+                    <ul class="text-gray-700 dark:text-gray-300">
+                        <li class="mb-2">Email: vtu21413@veltech.edu.in</li>
+                        <li class="mb-2">Phone: +191xxxxxxx</li>
+                        <li>Address: India</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white text-center py-4">
+            <p>&copy; 2024 Pranshu Chourasia. All rights reserved.</p>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+        <script>
+            // JavaScript to toggle the visibility of the menu
+            document.addEventListener('DOMContentLoaded', function() {
+                // Target the menu toggle button
+                const menuToggle = document.getElementById('menu-toggle');
+                // Target the menu container
+                const menuContainer = document.getElementById('navbar-sticky');
+
+                // Add event listener to toggle button
+                menuToggle.addEventListener('click', function() {
+                    // Toggle the 'hidden' class on the menu container
+                    menuContainer.classList.toggle('hidden');
+                });
+            });
+        </script>
+    </body>
+
+</html>

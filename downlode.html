@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photographer Section</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Add your custom styles here */
+        /* Photographer Section */
+        
+        .photographer-section {
+            padding: 4rem 0;
+            background-color: #fff;
+        }
+        
+        .photographer-section .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .photographer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .photographer-card {
+            background-color: #2d3748;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .photographer-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        
+        .photographer-name {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .scroll-down-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #2d3748;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .scroll-down-button:hover {
+            background-color: #1a202c;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse"> </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <a href="#download" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Download Photo</a>
+
+                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#gallery" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Photography Section -->
+    <!-- Photographer Section -->
+    <section class="py-8 bg-white mt-16">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-center text-gray-800 mb-8">Photographers</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Photographer 1 -->
+                <div class="max-w-xs mx-auto">
+                    <img src="image/DSC07978-01-min.jpeg" alt="Photographer 1" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800 text-center">Pranshu Chourasia</h3>
+                    <p class="text-gray-600 text-center">Specializes in landscapes and portraits.</p>
+                </div>
+                <!-- Photographer 2 -->
+                <div class="max-w-xs mx-auto">
+                    <img src="image/divesjh.jpeg" alt="Photographer 2" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800 text-center">Divesh Anand</h3>
+                    <p class="text-gray-600 text-center">Passionate about street photography.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="flex flex-col items-center justify-center min-h-screen py-12 bg-gray-100">
+        <div class="max-w-lg px-6 py-12 bg-white shadow-md rounded-lg">
+            <h1 class="text-3xl font-semibold text-center text-gray-800 mb-8">Download Your Photo</h1>
+            <p class="text-gray-600 text-lg text-center mb-8">Click the button below to download your photo:</p>
+            <p class="text-gray-600 text-lg text-center mb-8">PIN: 1931</p>
+            <div class="flex justify-center">
+                <!-- Updated href attribute to redirect to downlode.html -->
+                <a href="https://pranshuphotoshare.algomage.com/facerec/lavaza-2k24" class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-md transition duration-300 hover:bg-blue-700">Download</a>
+            </div>
+
+            <!-- Added link below the "Download" button -->
+            <div class="flex justify-center mt-4">
+                <p class="text-gray-600 text-center">If you face any problems, please <a href="#contact" class="text-blue-600">contact us</a>.</p>
+            </div>
+        </div>
+    </section>
+
+
+    </section>
+
+    <script>
+        // Smooth scrolling to the download section
+        document.querySelector('a[href="#download"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('#download').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+</body>
+
+</html>
